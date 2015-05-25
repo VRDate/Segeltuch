@@ -1,0 +1,289 @@
+<html>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#3A6EA5" alink="#3A6EA5" vlink="#A56EA5">
+
+<table width="100%" bordersize=0><tr>
+<td background="header_bg.gif" align="center">
+  <!--#exec cgi="/banner/bannersimulation.cgi"-->
+</td></tr></table>
+
+<table width="100%" bodersize=0><tr>
+<td background="pattern2.gif"><img src="spacer.gif" bordersize=0></td>
+<td width="100%">
+
+<p><strong>Updated Dec. 3, 2000</strong></p>
+<ul>
+<li><strong>Updated:</strong> New version of Segeltuch released (v0.3.4)!  All went really well
+so I decided to upload this version.  Go grab it on the downloads page!  The help file is now
+an MS HTML Help file (chm).  If this is a problem for anyone please tell me!
+<li>Just finsihed adding new features: Weapon creation/editing and Special point (Subsystem)
+creation/editing.  With these features, Segeltuch is slowly turning into an actual editor!
+<li>With these new features, I added some new capabilities to the editor and these need to be
+documented.  As soon as I accomplish that, I will release v0.3.4 (hopefully today!)
+<li>There was a bug introduced in the last version of Segeltuch (v0.3.3) that deals with the group
+numberring of weapons.  If you already loaded your project with the last version then please
+go through each of the weapons and verify that they are numbered correctly!
+</ul>
+
+<p><strong>Nov. 29, 2000</strong></p>
+<ul>
+<li>New version of Segeltuch released (v0.3.3).  I let too much time slide by so you might
+be thinking this is a major update.  Unfortunately, it is not.  None of the important new features
+are listed (thanks everyone for you comments!)  Well, anyway one thing is cool: POF output
+is DRAMATICALLY better.  This version fixes any problems people might have had with their
+ships slowing down the game, or any problems with the ships being loaded in other programs.
+Of course, this also means collision detection is working so FRED may be a little more happy!
+<li>Some people were having a problem with a bad link to KERNEL32.DLL.  This resulted from
+one little line I forgot I had even written.  So that may be fixed (I cannot test!)
+<li>This is importnt:  I changed the format of the project file.  When you load and save you model,
+it sould automatically be switched, but I cannot garautee that.  I HIGHLY reccommend
+that you backup your favorite project before loading it and saving it in this new
+version!
+</ul>
+
+<p><strong>Oct. 9, 2000</strong></p>
+<ul>
+<li>New version of Segeltuch released (v0.3.2).  I feel bad uploading such a minor upgrade,
+but the bug that leads to odd lighting in the game is fixed.  I decided that everyone
+deserved the upgrade before I tore the code apart adding more stuff.  Well, go to the
+downloads page to get it and read the manual to see what's new.
+</ul>
+
+<p><strong>Oct. 5, 2000</strong></p>
+<ul>
+<li>Cold overcast rainy weather and illness combine their strengths to form the one and only
+Segeltuch Version 0.3.1, The First Public Release!  It's amazing to me (and even more so to
+others) that this little app is finally out.  Well, kinda.  She doesn't do much, but she is
+mildly stable.  I don't want to say much more here other than that the distribution is available
+in the Downloads page.  Included with that is a readme which should get you going on your first
+project.  This next point is very important: I need feedback.  Send me everything you want to
+be included in the application, no matter how silly you think it is.  If I don't get feedback
+then we will probably sit here at version 0.3.1 forever.
+<li>One more point.  Right now, she is <i>freeware</i> copyrighted by me (Frank A. Krueger)
+and the Code Alliance.  However, I will soon release it under the GPL as free software
+(as defined by GNU).
+</ul>
+
+<p><strong>Sept. 23, 2000</strong> </p>
+<ul>
+<li>Progress.  Geometry. Textures. A new system for writing POFs.  Send your comments <a href="mailto:fak4822@rit.edu">my</a> way.
+</ul>
+
+<p><strong>Jul. 8, 2000</strong> </p>
+<ul>
+<li>Progress.  I am focusing my attention on the components of Segeltuch that allow
+you to assemble the geometry of the model.  This means DXF importing individual meshes,
+arranging them in the model hierarchy, and assigning and aligning textures.  These (along
+with shields) will be the strong points of the first release.  This also means that the models
+will be incomplete: no weapons, no thrusters.  You will however be able to add subsystems
+that are built exclusively with the paramters given to each mesh (consult the POF specs to
+know what the hell I'm talking about).  An early followup to this release will contain
+elementary geometry editing tools.  The followup to that version will contain more POF dedicated
+features (weapons, etc.).  The reason for releasing the app in pieces like this is not at all
+together clear to me, but it feels right.  This will allow <i>you</i> to give
+<a href="mailto:fak4822@rit.edu">me</a> incremental suggestions.  Well, 'nough talkie talkie.
+</ul>
+
+<p><strong>Jul. 6, 2000</strong> </p>
+<ul>
+<li>BETA Testing of the core features of Segeltuch will begin soon.  And now words that
+I have been afraid to speak: <strong>I need a group of about 5 BETA testers</strong> to
+help with this process.  These people will have to be deicated to the game, active members
+of the community, and have an adequate technical knowledge to do their testing without
+instruction (instructions for operating Segeltuch will of course be provided.)  If you
+are interested, <a href="mailto:fak4822@rit.edu">e-mail me</a>.
+</ul>
+
+<p><strong>Jul. 5, 2000</strong> </p>
+<ul>
+<li>A refreshed look to the old site.  Not exactly a spacy-sci-fi theme but comfortable on
+my eyes :-)
+<li>Segeltuch was finally able to output a fully operating model to freespace (cheers from all
+around).  But there are two problems.  The first is rooted in the fact that although the BSP
+tree generated is accurate to the specification given, the models are rendered horrendously
+slow if the tree is allowed to propagate down the last polygon.  This is the method as described
+in the IDTA spec, but does not seem to be the best one.  However, this can be eleviated by
+stopping the growth of the tree when it reaches a tight cluster of X amount of polygons (where
+2 <= X < NUMPOLYS).  But doing that introduces other problems such as more work with collisions.
+The happy medium has yet to be found.  If you have any suggestions, please e-mail
+<a href="mailto:fak4822@rit.edu">me</a>.
+</ul>
+
+<p><strong>Mar. 6, 2000</strong> </p>
+<ul>
+<li>Changed some code around so that textures of any dimension can be loaded.  This is
+different from what I said earlier about textures required to have dimensions that are
+powers of two.  Turns out that such a limitation is <i>very</I> annoying!
+<li>Fixed a couple OpenGL texturing bugs..some resources were not being freed.  I knew
+about this one all along but didn't know how to remedy it until the solution hit me
+in the face today!
+<li>I haven't decided how I am going to treat the thruster animation.  I believe I will
+just pull the first frame out of the animation...
+<li>Working on the shield tool..should be a little more intuitive now.  This, however, has
+low priority because I have yet to even write the POF shield chunk code. :-)
+</ul>
+
+<p><strong>Mar. 4, 2000</strong> </p>
+<ul>
+<li>Big decision been made.  About what?  Well, I had the thought of turning FreeDXF
+into a full-fledged POF <B>Editor</B>.  That means it can directly open POF files and
+retain all the information in them.  Under these circumstances I am renaming the
+project to <I>Segeltuch</I>.  New screenshot on the page, check it out!
+<li>Finally got my copy of C++Builder 5.0.  Wow, it's a dusy; Borland is doing a fine
+job these days.  It didn't take much work, but some time was spent migrating "FreeDXF"
+to the new compiler.
+<li>FreeDXF can now load POFs directly from VP files.  Although it can not load the POF's
+texture.  This is a feature that <i>will</i> be implemented though!
+</ul>
+
+<p><strong>Feb. 22, 2000</strong></p>
+<ul>
+<li>Over a month and no updates..tisk, tisk.  I became exceedingly occupied by my class work, but
+that is all behind us now.  Some very good progress was made today--all of which has to do with
+texture mapping the model.  As I have mentioned earlier, FreeDXF does not import texture information
+(this is a way of protecting my butt).  So we now can:<BR><BR>
+<ol><li><B>View the textures on the model in the main window.</B>  Thanks to OpenGL this was very
+little trouble.  One thing to define here though, FreeDXF will only allow the user to select
+textures whose sizes are powers of 2.  This is actually an OpenGL limitation that I do not want
+"to work around".  This isn't a big problem though.  I <i>highly</i> recommend that people do as
+Volition and merge all the textures onton one big texture (no more than 256x256).
+<li><B>Rotate the texture.</B>  This is performed by rotating the texture vertices around the first
+one.  If you have no idea what I'm talking about, then checkout JED's (www.darkjedi.com)
+Preview Window as my program mimics JED's Texture mapping system (with very minor differences).
+<li><B>Scale Textures.</B>  This can be performed by an arbitrary number.
+<li><B>Translate the Texture.</B></OL>
+<BR>All of these transformations are performed on the currently selected faces (remeber that FreeDXF
+uses multi-selection to accomplish most actions).  Though these functions are not perfect, I have
+found that I can almost always get the texture to look how I want so long as I play for a sufficient
+time. :-)
+<BR><BR>Now that this very important aspect of FreeDXF is stable, I will concentrate completely on
+generating POF files.  Wish me luck!
+</ul>
+
+<p><strong>Jan. 17, 2000</strong></p>
+<ul>
+<li>Well, I have some of the models showing up in FreeSpace now.  Still a <B>lot</B> of work
+to do though!  Please check out the screenshots section for a cursory example...
+</ul>
+
+<p><strong>Jan. 11, 2000</strong></p>
+<ul>
+<li>It's a BIG day.  FreeDXF outputed its first POF file that does not crash FreeSpace!
+I know you may be wondering what the big deal is, but let me put this in an even better
+way.  In this file was _almost_ everything that is needed to actually display the ships.  The
+only thing missing was the actual tree that lists the polygons.  But let me tell you, that code
+will not be difficult to write.  I hope to see my own model in FreeSpace some time tomorrow.
+<BR><B>Keep your fingers crossed!</B>
+</ul>
+
+<p><strong>Jan. 3, 2000></strong></p>
+<ul>
+<li>Happy New Year!
+<li>Added a Downloads page.  Check it out!
+<li>Did some internals work on the app, couple OpenGL optimizations, couple POF loading
+fixes and optimizations.  I plan to work hard on POF writing this week, so stay tuned!
+</ul>
+
+<p><strong>Dec. 12, 1999</strong></p>
+<ul>
+<li>Well, I finished a dedicated POF to trueSpace COB converter.  I made up my
+mind that it was unfair to make the "cutscene" people wait for the "modeling"
+people's editor.  So, there is a new link on the left bar to download POF2COB
+version 0.9.  Have fun, and please send your comments!
+</ul>
+
+<p><strong>Dec. 8, 1999</strong></p>
+<ul>
+<li>As you know, the old site went down and I had to move it here.  The pluses:
+this server is very reliable which means the page will always be up.  The minuses:
+I only get 2MB of account space so I will not be able to support a myriad of apps.
+<li>Wrote a COB file exporter.  It wasn't easy I have to tell you, but it works well.
+The purpose of the converter is not in line with the purpose of the application, but people
+seemed to want one, and my app was extensible enough to do it.  Two notes, texture vertices
+are preserved, but you will have to convert the PCXs to BMPs, and the converter does not
+preserve the mesh hierarchy (all meshes are merged into one object).
+<li>Changed the interface for selecting which parts of a POF to convert to DXF
+or COB.  In my opinion, it is more intuitive.
+<li>Added support for mesh properties (just a string that follows the mesh around).
+<li>Rebuilt the internals so shields are no longer apart of the hierarchy, they are
+instead an optional object.
+<li>Began the POF writer.  It writes everything but the BSP tree.  Unfortunately,
+FreeSpace crashes when it tries to open the files..  I hope it is just because the
+tree is absent..
+</ul>
+
+<p><strong>Nov. 17, 1999</strong></p>
+<ul>
+<li>Re-did the projection system that allows the 3D window to be rectangular
+in shape.  Before, this window had to be square in order to preserve the
+proper aspect ratio.  No longer.  One trade-off; before, when one opened a
+project, that model would fit itself to the screen size.  This no longer
+happens.  There is a fixed <I>initial</I> scale (you can of course change
+the scale while working on the model).  The benfit is more freedom of the
+user and better compliance with Windows95 standards (uses a slider bar
+between 3D window and editors).
+<li>Fixed a bug with multi-selected mesh offsetting.  I know what you're
+saying: Already? :-)  Just a silly mistake.
+<li>Added these mesh editing features which work on all selected meshes:
+deletion, face flipping, re-naming, and offsetting.  Deletion is obvious.
+Face flipping was added in case your editor uses a different vertex-ordering
+than FreeSpace2.  Re-naming is obvious.  Offsetting is currently done by typing in
+values.  There is a possibility of allowing the user to drag objects around;
+I have to decide if that is advantageous enough to merit the re-coding of certain
+pieces of code.  The good news is I was going to add code to move engine glows
+and such, so moving meshes is a strong possibility.
+</ul>
+
+<p><strong>Nov. 16, 1999</strong></p>
+<ul>
+<li>My e-mail address here is not functioning.  If you send a message, please
+read the reply and re-send the message to that address, thank you.
+<li>Wrote a VP file interface so one can select models straight out of the
+container.  No ability to add them yet - but soon.
+<li>Updated 3D navigation to the likes of
+<A href="http://www.darkjedi.com">JED's</A>.  That is easily my favorite style.
+<li>Wrote an object picker, and I currently support editing Meshes, Faces,
+Vertices, and Thrusters.
+<li>Fixed a problem with Debris importing.  I made an earlier assumption that I
+should not have made.  At the same time, I updated shield importing.
+</ul>
+
+<p><strong>Nov. 10, 1999</font></strong></p>
+<ul>
+<li>Played with the OpenGL renderer until it displayed the models a little
+more correctly.  BTW, there will be three modes of viewing the model:
+Wire, Solid, and Textured.  Textured won't be for awhile.  But the other
+two, of course, were easy.  How can you go wrong with
+<A href="http://www.opengl.org">OpenGL</A>?
+<BR>The screenshot has been updated to show this off...
+<li>FINALLY found and fixed the bug in the POF->DXF converter that
+sheared many faces.
+<li>Added a function "Generate Shields" incase the user does not want to
+take the time to model these.  The algorithm is beyond simple; FreeDXF
+generates a sphere (made of triangles) and wraps it around the model.
+</ul>
+
+<p><strong>Nov. 3, 1999</strong></p>
+<ul>
+<li>Added &quot;View Hierarchy&quot; that allows the
+    user to view sections of the model by Level of
+    Detail, Debris, Shields, etc. </li>
+<li>Added preliminary OpenGL viewing code. So far
+    only works with displays of &gt;256 colors. If
+    this is a big problem for anyone e-mail me.</li>
+<li>Added importing of DXF as a new LOD or Debris
+    peice (Shields coming soon).</li>
+<li>Added project creation, loading, and saving.</li>
+</ul>
+
+<p><strong>Oct. 27, 1999</strong></p>
+<ul>
+<li>Finished a stable FreeSpace2 POF file reader and
+    wrote a converter to AutoCAD R12 DXF format. </li>
+<li>Constructed main application interface. Very
+    similar to <a href="http://www.darkjedi.com">AceDXF</a>.</li>
+</ul>
+
+</td></tr></table>
+</body>
+</html>
