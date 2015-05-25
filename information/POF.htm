@@ -1,0 +1,452 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://www.descent-freespace.com/ddn/specs/pof.html -->
+<HTML><HEAD><TITLE>POF</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="t, default" name="Microsoft Border">
+<META content="MSHTML 5.00.2614.3401" name=GENERATOR></HEAD>
+<BODY aLink=#ffff00 bgColor=#000000 link=#958cff text=#ffffff vLink=#6255ff><!--msnavigation-->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD>
+      <SCRIPT language=JavaScript>
+<!--
+
+function dnetwork()
+{
+	window.open("http://www.descent-4.com/siteinfo/network","network","width=300,height=200,screenX=0,screenY=0,dependant=yes,hotkeys=no,locationbar=no,menubar=no,resizable=no,statusbar=no");
+}
+// --></SCRIPT>
+
+      <TABLE border=0 cellPadding=2 cellSpacing=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#001000 width="80%"><FONT color=#ffffff 
+            face="MS Sans Serif"><STRONG><A 
+            href="http://www.descent-freespace.com/"><IMG align=absMiddle 
+            alt="Back to Home Page" border=0 height=15 
+            src="POF_files/menu_mainicon.gif" width=15></A><SMALL><SMALL> POF
+            <SCRIPT language=JavaScript><!--
+		if(document.URL.search(/freespace-2.com/i)!=-1)
+			document.write("- freespace-2.com");
+		else
+			document.write("- descent-freespace.com");
+	// --></SCRIPT>
+             </SMALL></SMALL></STRONG></FONT></TD>
+          <TD bgColor=#001000 width="20%">
+            <P align=right><FONT color=#ffffff 
+            face="MS Sans Serif"><SMALL><SMALL>[ <A 
+            href="javascript:dnetwork()">Network</A> ] [ <A 
+            href="http://www.descent-4.com/siteinfo">About</A> 
+            ]</SMALL></SMALL></FONT></P></TD></TR>
+        <TR>
+          <TD bgColor=#606000 width="80%"><FONT color=#ffffff 
+            face="MS Sans Serif"><SMALL><SMALL><NOBR>[&nbsp;<A 
+            href="http://www.descent-freespace.com/ddn/specs/vp.html">VP</A>&nbsp;]</NOBR> 
+            <NOBR>[&nbsp;<A 
+            href="http://www.descent-freespace.com/ddn/specs/ani.html">ANI</A>&nbsp;]</NOBR> 
+            <NOBR>[&nbsp;POF&nbsp;]</NOBR> <NOBR>[&nbsp;<A 
+            href="http://www.descent-freespace.com/ddn/specs/idta.html">IDTA&nbsp;(=BSP)</A>&nbsp;]</NOBR> 
+            <NOBR>[&nbsp;<A 
+            href="http://www.descent-freespace.com/ddn/specs/tbl.html">TBL</A>&nbsp;]</NOBR> 
+            <NOBR>[&nbsp;<A 
+            href="http://www.descent-freespace.com/ddn/specs/registry.html">Registry&nbsp;Tweaks</A>&nbsp;]</NOBR></SMALL></SMALL></FONT></TD>
+          <TD bgColor=#606000 width="20%"><SMALL><SMALL><FONT color=#ffffff 
+            face="MS Sans Serif">
+            <P align=right>[ <A 
+            href="http://www.descent-freespace.com/search/index.html">Search</A> 
+            ] <NOBR>[&nbsp;<A 
+            href="http://www.descent-freespace.com/">Home</A>&nbsp;]</NOBR> 
+            <NOBR>[&nbsp;<A 
+            href="http://www.descent-freespace.com/ddn/specs/index.html">Up</A>&nbsp;]</NOBR></FONT><FONT 
+            color=#80ff80 face="MS Sans Serif"> 
+</FONT></SMALL></SMALL></P></TD></TR>
+        <TR>
+          <TD width="80%"><FONT color=#ffffff 
+            face="MS Sans Serif"><SMALL><SMALL></SMALL></SMALL></FONT></TD>
+          <TD width="20%">
+            <P align=right><FONT color=#80ff80 
+            face="MS Sans Serif"><SMALL><SMALL>Last updated: 05/23/99 
+            </SMALL></SMALL></FONT></P></TD></TR></TBODY></TABLE></TD></TR><!--msnavigation--></TBODY></TABLE><!--msnavigation-->
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TBODY>
+  <TR><!--msnavigation-->
+    <TD vAlign=top>
+      <P>&nbsp;</P>
+      <P align=right><FONT color=#80ff80 face=Arial><EM><SMALL>Written by John 
+      Slagel and Heiko Herrmann / Last updated: <!--webbot bot="Timestamp" S-Type="EDITED"
+    S-Format="%m/%d/%y" startspan -->05/23/99<!--webbot bot="Timestamp" endspan
+    i-checksum="14006" --></SMALL></EM></FONT></P>
+      <TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD background=POF_files/mainfadeleft.gif width=150><IMG 
+            alt="fadeleft.gif (1919 bytes)" height=50 
+            src="POF_files/mainfadeleft.gif" width=150></TD>
+          <TD bgColor=#ff0000 width="100%">
+            <P align=center><FONT color=#000000 
+            face=Arial><BIG><BIG><EM><STRONG><BIG>Descent Developer Network - 
+            POF specs</BIG></STRONG></EM></BIG></BIG></FONT></P></TD>
+          <TD background=POF_files/mainfaderight.gif width=150><IMG 
+            alt="faderight.gif (1876 bytes)" height=50 
+            src="POF_files/mainfaderight.gif" width=150></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD width=150><IMG alt="fadeleft.gif (1919 bytes)" height=30 
+            src="POF_files/fadeleft.gif" width=150></TD>
+          <TD bgColor=#00ff00 width="100%">
+            <P align=center><FONT color=#000000 
+            face=Arial><STRONG><BIG>Overview</BIG></STRONG></FONT></P></TD>
+          <TD width=150><IMG alt="faderight.gif (1876 bytes)" height=30 
+            src="POF_files/faderight.gif" width=150></TD></TR></TBODY></TABLE>
+      <P><FONT color=#80ff80 face=Arial size=2>These files are used to hold the 
+      ship model data. The data for the ship is basically a BSP tree that 
+      doesn't split polygons across the planes (since we're using zbuffering) 
+      and the planes are created by halving the largest dimension of each 
+      bounding box recursively. Due to the vastness of some of our models, this 
+      recursively split structure allows our collision detection and dynamic 
+      lighting to do quick out's on the model. For example, to check if a vector 
+      interects the model, I check against the bounding box. If it hits, I then 
+      check each of the two boxes it is split into. Then I recursively check 
+      each subdivided box as long as the vector is still interesecting. 
+      </FONT></P>
+      <P><SMALL><FONT color=#80ff80 face=Arial>We create the POF file by 
+      exporting a 3DS Max file with a special plugin tool to generate a ".p3d" 
+      file, which is essentially a 3d studio file only with texture uv's stored 
+      for each face vertex rather than for each vertex. We then run the .p3d 
+      file through an in-house Win32 program called 'BSPGEN' which creates the 
+      POF file. Depending on the model size, BSPGEN takes a few minutes or 
+      so.</FONT></SMALL></P>
+      <P><SMALL><FONT color=#80ff80 face=Arial>Each ship is made up of a lot of 
+      subobjects where a subobject is a collection of polygons. For instance, 
+      each detail level of a hull of a ship is a subobject. A radar dish is a 
+      subobject. A piece of debris that the ship explodes into is a subobject. 
+      Each subobject can then have children subobjects. To draw the highest 
+      detail model of a ship, draw the subobject identified as detail level 0 
+      and draw all it's children.</FONT></SMALL></P>
+      <P>&nbsp;</P>
+      <TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD width=150><IMG alt="fadeleft.gif (1919 bytes)" height=30 
+            src="POF_files/fadeleft.gif" width=150></TD>
+          <TD bgColor=#00ff00 width="100%">
+            <P align=center><FONT color=#000000 face=Arial><STRONG><BIG>Data 
+            types</BIG></STRONG></FONT></P></TD>
+          <TD width=150><IMG alt="faderight.gif (1876 bytes)" height=30 
+            src="POF_files/faderight.gif" width=150></TD></TR></TBODY></TABLE>
+      <P><FONT color=#80ff80 face=Arial size=2>This uses standard Intel data 
+      types.</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="15%"><SMALL><FONT 
+            face="Courier New">float</FONT></SMALL></TD>
+          <TD bgColor=#002000 width="85%"><SMALL><FONT face=Arial>standard 
+            intel 4-byte float</FONT></SMALL></TD></TR>
+        <TR>
+          <TD bgColor=#003000 width="15%"><SMALL><FONT 
+            face="Courier New">vector</FONT></SMALL></TD>
+          <TD bgColor=#002000 width="85%"><SMALL><FONT face=Arial>three 
+            floats</FONT></SMALL></TD></TR>
+        <TR>
+          <TD bgColor=#003000 width="15%"><SMALL><FONT 
+            face="Courier New">string</FONT></SMALL></TD>
+          <TD bgColor=#002000 width="85%"><SMALL><FONT face="Courier New">int 
+            string_length<BR>char[length] string_content</FONT><BR><FONT 
+            face=Arial><EM>Note that it isn't 
+            null-terminated.</EM></FONT></SMALL></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD width=150><IMG alt="fadeleft.gif (1919 bytes)" height=30 
+            src="POF_files/fadeleft.gif" width=150></TD>
+          <TD bgColor=#00ff00 width="100%">
+            <P align=center><FONT color=#000000 face=Arial><STRONG><BIG>File 
+            Structure</BIG></STRONG></FONT></P></TD>
+          <TD width=150><IMG alt="faderight.gif (1876 bytes)" height=30 
+            src="POF_files/faderight.gif" width=150></TD></TR></TBODY></TABLE><FONT 
+      size=2>
+      <P><FONT color=#80ff80 face=Arial size=2>The file format is a binary file 
+      using standard Intel data types.</FONT></P>
+      <P><FONT color=#80ff80 face=Arial size=2>The top of the file contains an 
+      ID and version number:</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" 
+            size=2>char[4] file_id &nbsp; // must be 'PSPO'<BR>int version 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // 
+        Major*100+Minor</FONT></TD></TR></TBODY></TABLE>
+      <P><FONT color=#80ff80 face=Arial size=2>Note: PSPO stood for Parallax 
+      Software Polygon Object at one time. FreeSpace shipped at POF version 
+      20.14, so </FONT><FONT face="Courier New" size=2>version</FONT><FONT 
+      color=#80ff80 face=Arial size=2> would be equal to 2014.</FONT></P>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face=Arial size=2>The rest of the file is a bunch 
+      of chunks. Each chunk is:</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" 
+            size=2>char[4] chunk_id&nbsp;&nbsp;// see below for available chunk 
+            types<BR>int 
+            length&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// length of 
+            the chunk.</FONT></TD></TR></TBODY></TABLE>
+      <P><FONT color=#80ff80 face=Arial size=2>See Appendix B for some example 
+      parsing code.</FONT></P>
+      <P>&nbsp;</P>
+      <TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD width=150><IMG alt="fadeleft.gif (1919 bytes)" height=30 
+            src="POF_files/fadeleft.gif" width=150></TD></FONT>
+          <TD bgColor=#00ff00 width="100%">
+            <P align=center><FONT color=#000000 face=Arial 
+            size=3><STRONG><BIG>Chunk Types</BIG></STRONG></FONT></P></TD>
+          <TD width=150><IMG alt="faderight.gif (1876 bytes)" height=30 
+            src="POF_files/faderight.gif" width=150></TD></TR></TBODY></TABLE>
+      <P><FONT color=#80ff80 face=Arial size=2>Here is a breakdown of each of 
+      the chunk types:</FONT></P>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'OHDR'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Object header info</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_subobjects &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // 
+            number of subobjects<BR>float 
+            max_radius&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            // maximum radius of entire ship<BR><BR>int obj_flags 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp; // object flags. Bit 1 = Textures contain 
+            tiling<BR><BR>vector 
+            min_bounding&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // min 
+            bounding box point<BR>vector 
+            max_bounding&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // max 
+            boundingbox point<BR><BR>int 
+            num_detaillevels&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // number 
+            of detail levels<BR>for each detail_level, i {<BR>&nbsp;int 
+            sobj_detailevels[i]&nbsp;&nbsp;&nbsp; // subobject number for detail 
+            level I, 0 being highest.<BR>}<BR><BR>int 
+            num_debris&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp; // number of debris pieces that model explodes into<BR>for 
+            each debris piece, i<BR>&nbsp;int 
+            sobj_debris[i]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // 
+            subobject number for debris piece i<BR><BR><FONT 
+            color=#ff8080>#ifdef version1903orhigher</FONT><BR>&nbsp;float 
+            mass&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // see notes 
+            below<BR>&nbsp;vector 
+            mass_center&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // 
+            center of mass<BR>&nbsp;float[3][3] moment_inertia // moment of 
+            inertia<BR><FONT color=#ff8080>#endif</FONT><BR><BR></FONT><FONT 
+            color=#ff8080 face="Courier New" size=2>#ifdef 
+            version2014orhigher</FONT><BR><FONT face="Courier New" 
+            size=2>&nbsp;int num_cross_sections&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// 
+            number of cross sections (used for exploding ship)<BR>&nbsp;for each 
+            cross_section, i {<BR>&nbsp;&nbsp;float 
+            depth[i]<BR>&nbsp;&nbsp;float radius[i]<BR>&nbsp;}<BR></FONT><FONT 
+            color=#ff8080 face="Courier New" size=2>#endif</FONT><BR><FONT 
+            face="Courier New" size=2><BR></FONT><FONT color=#ff8080 
+            face="Courier New" size=2>#ifdef version2007orhigher</FONT><BR><FONT 
+            face="Courier New" size=2>&nbsp;int 
+            num_lights&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            &nbsp; // number of precalculated muzzle flash lights<BR>&nbsp;for 
+            each light {<BR>&nbsp;&nbsp;vector location<BR>&nbsp;&nbsp;int 
+            light_type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            // type of light<BR>&nbsp;}<BR></FONT><FONT color=#ff8080 
+            face="Courier New" size=2>#endif</FONT></TD></TR></TBODY></TABLE>
+      <P><FONT face=Arial><SMALL>Notes:</SMALL></FONT> </P>
+      <UL>
+        <LI><FONT face=Arial size=2>for version&lt;2009, mass is a volume 
+        mass</FONT> 
+        <LI><FONT face=Arial size=2>for version&gt;=2009, mass is an area 
+        mass</FONT> 
+        <LI><FONT face=Arial size=2>conversion: area_mass=4.65*(vol_mass^2/3); 
+        also scale moment_inertia by vol_mass/area_mass</FONT> </LI></UL>
+      <P>&nbsp;</P>
+      <P><STRONG><FONT color=#80ff80 face="Courier New" 
+      size=2>'TXTR'</FONT></STRONG><FONT color=#80ff80 face=Arial size=2> - A 
+      list of textures used on this ship. The order they appear here is the 
+      number that a face uses to reference a particular texture.</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_textures<BR>for each texture,i<BR>&nbsp;string 
+            tex_filename[i]&nbsp;&nbsp;&nbsp; // texture filename 
+        </FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'PINF'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Miscellaneous info about the POF file, command line, 
+      etc</FONT></P>
+      <P><EM><FONT color=#80ff80 face=Arial size=2>Contains a block of 
+      NULL-terminated strings. Just read chunk size bytes and stuff it into a 
+      string.</FONT></EM></P>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'PATH'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Paths for docking and AI ships to follow</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_paths<BR>for each path, p {<BR>string 
+            name[p]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            // name<BR>string 
+            parent[p]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            // parent's name<BR>int num_verts[p]<BR>for each vert, v {<BR>&nbsp; 
+            vector pos[p,v]<BR>&nbsp; float radius[p,v]<BR>&nbsp; int 
+            num_turrets[p,v]<BR>&nbsp; for each turret, t {<BR>&nbsp;&nbsp; int 
+            sobj_number[p,v,t]&nbsp;&nbsp;// subobject number<BR>&nbsp; 
+            }<BR>}<BR>}</FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'SPCL'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Data for special points</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_special_points<BR>for each special_point, p {<BR>&nbsp;string 
+            name[p]<BR>&nbsp;string properties[p]<BR>&nbsp;vector 
+            point[p]<BR>&nbsp;float radius[p]<BR>}</FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'SHLD'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Data for the shield mesh</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_vertices<BR>for each vertex, v {<BR>vector 
+            position[v]<BR>}<BR><BR>int num faces<BR>for each face, f 
+            {<BR>&nbsp;vector face_normal[f]<BR>&nbsp;int[3] 
+            face_vertices&nbsp;&nbsp;&nbsp; // indexed into vertex 
+            list<BR>&nbsp;int[3] 
+            neighbors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // indexed into 
+            face list<BR>}</FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><STRONG><FONT color=#80ff80 face="Courier New" size=2>' 
+      EYE'</FONT></STRONG><FONT color=#80ff80 face=Arial size=2> - Data for eye 
+      points (Where pilot looks in 1<SUP>st</SUP> person views) Note the space 
+      in front of EYE.</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_eye_positions<BR>for each eye_position, e {<BR>&nbsp;int 
+            sobj_number[e]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // subobject number 
+            this eye is attached to<BR>&nbsp;vector sobj_offset[e]&nbsp;&nbsp; 
+            // offset from subobject<BR>&nbsp;vector 
+        normal[e]<BR>}</FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'GPNT'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> and </FONT><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'MPNT'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Gun and Missile firing points</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_guns<BR>int num_banks<BR>for each gun, g {<BR>&nbsp;int 
+            num_slots[g]<BR>&nbsp;for each slot, s {<BR>&nbsp;&nbsp; vector 
+            point[g,s]<BR>&nbsp;&nbsp; vector 
+        norm[g,s]<BR>&nbsp;}<BR>}</FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'TGUN'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> and </FONT><FONT color=#80ff80 
+      face="Courier New"><STRONG>'TMIS'</STRONG></FONT><FONT color=#80ff80 
+      face=Arial size=2> - Turret Gun and Turret Missile firing 
+      points.</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            number of banks<BR><BR>for each bank, b {<BR>&nbsp;int 
+            sobj_parent[b]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // parent 
+            subobject (The turret base that this is associated 
+            with)<BR>&nbsp;int sobj_par_phys[b]&nbsp;&nbsp;&nbsp;&nbsp; // 
+            physical parent subobject (The actual subobject this is attached 
+            to)<BR><BR>&nbsp;vector turret_normal[b]<BR>&nbsp;int num 
+            firing_points[b]<BR>&nbsp;for each firing_point 
+            {<BR>&nbsp;&nbsp;vector 
+        position[b,f]<BR>&nbsp;}<BR>}</FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'DOCK'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Data for docking points</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_docks<BR>int num_docking_bays<BR><BR>for each dock, d 
+            {<BR>&nbsp;string properties[d]&nbsp;&nbsp;&nbsp;&nbsp; // see notes 
+            below<BR>&nbsp;int num_spline_paths[d]<BR>&nbsp;for each 
+            spline_path, p {<BR>&nbsp;int 
+            path_number[d,p]<BR>&nbsp;}<BR>&nbsp;<BR>&nbsp;int 
+            num_points<BR>&nbsp;for each point, d {<BR>&nbsp;vector 
+            position<BR>&nbsp;vector 
+      normal<BR>&nbsp;}<BR>}</FONT></TD></TR></TBODY></TABLE>
+      <P><FONT color=#80ff80 face=Arial size=2><EM>Note: Properties… if $name= 
+      found, then this is name. If name is cargo then this is a cargo 
+      bay.</EM></FONT></P>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'FUEL'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Data for engine thruster glows</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            num_thrusters<BR>for each thruster,t {<BR>&nbsp;int num 
+            glows[t]<BR>&nbsp;<BR>&nbsp;for each glow {<BR>&nbsp; vector 
+            pos[t,g]<BR>&nbsp; vector norm[t,g]&nbsp;&nbsp; // used to tell if 
+            behind glow<BR>&nbsp; float 
+        radius[t,g]<BR>&nbsp;}<BR>}</FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face="Courier New" 
+      size=2><STRONG>'SOBJ'</STRONG></FONT><FONT color=#80ff80 face=Arial 
+      size=2> - Data for a subobject. Contains some info and a bunch of vertices 
+      and polygons in the form of a BSP tree or Octree depending on how you look 
+      at it.</FONT></P>
+      <TABLE border=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD bgColor=#003000 width="100%"><FONT face="Courier New" size=2>int 
+            submodel_number &nbsp;// What submodel number this is.<BR>int 
+            submodel_parent&nbsp; // What submodel is this model's parent. Equal 
+            to -1 if none.<BR>vector 
+            offset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Offset to from 
+            parent object &lt;- Added 09/10/98<BR>float 
+            radius&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // radius of 
+            this subobject<BR><BR>vector geometric_center<BR>vector 
+            bounding_box_min_point<BR>vector 
+            bounding_box_max_point<BR><BR>string submodel_name<BR>string 
+            properites<BR>int movement_type<BR>int movement_axis<BR><BR>int 
+            reserved&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // must be 
+            0<BR>int bsp_data_size&nbsp;&nbsp;&nbsp; // number of bytes now 
+            following<BR>char[bsp_data_size] bsp_data&nbsp; // contains actual 
+            polygons, etc.</FONT></TD></TR></TBODY></TABLE>
+      <P>&nbsp;</P>
+      <P><FONT color=#80ff80 face=Arial size=2>The format of the bsp_data is 
+      explained in the <A 
+      href="http://www.descent-freespace.com/ddn/specs/idta.html">IDTA 
+      specs</A>.</FONT></P>
+      <P>&nbsp;</P>
+      <P>&nbsp;</P><!--webbot bot="Include" U-Include="../../dnet/counterb.html" TAG="BODY" startspan -->
+      <P align=center><FONT face=Arial size=2><A 
+      href="http://www.b-online.de/"><B>WebHits</B></A><FONT color=#ffffff> 
+      counts <IMG align=middle border=0 height=32 src="POF_files/Count.gif" 
+      width=138> accesses on this page since 04/21/98. View </FONT><A 
+      href="http://webhits.b-online.de/cgi/webstat?df=25386&amp;pw=fnet" 
+      target=_blank>detailed statistics</A>!</FONT></P><!--webbot bot="Include" endspan i-checksum="57433" --><!--msnavigation--></TD></TR><!--msnavigation--></TBODY></TABLE></BODY></HTML>
